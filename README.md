@@ -27,7 +27,7 @@ These HTML templates for Zabbix notifications are designed to enhance the user e
 
 ### Template Views    
 
-![Template Views](/img/collage.png "Template Views")
+![Template Views](/img/Collage.png "Template Views")
 
 
 ### Installation and Usage  
