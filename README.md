@@ -47,7 +47,7 @@ These HTML templates for Zabbix notifications are designed to enhance the user e
 2. Insert the template texts in the Zabbix WEB-UI: *Alerts -> Media types -> Email (HTML) -> Message templates*     
    ![Update Template](img/media_type_html.png)  
 
-3. The title format for email templates:
+3. The title format for email templates:  
        - *your_company_problem_template*: `Problem: {HOST.NAME}: {EVENT.NAME}`  
        - *your_company_resolve_template*: `Resolved in {EVENT.DURATION}: {EVENT.NAME}`   
        - *your_company_problem_update_template*: `Updated problem in {EVENT.AGE}: {EVENT.NAME}`  
