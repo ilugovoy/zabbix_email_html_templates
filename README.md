@@ -29,8 +29,8 @@ These HTML templates for Zabbix notifications are designed to enhance the user e
 
 <div style="width: 100%; display: flex; justify-content: space-between;">
   <img src="img/problem_template.png" alt="Problem Template" style="width: 33%; margin: 5px;">
-  <img src="img/resolve_template.png" alt="Resolve Template" style="width: 33%; margin: 5px;">
-  <img src="img/update_template.png" alt="Update Template" style="width: 33%; margin: 5px;">
+  <img src="img/resolve_template.png" alt="Resolve Template" style="width: 31%; margin: 5px;">
+  <img src="img/update_template.png" alt="Update Template" style="width: 31%; margin: 5px;">
 </div>
 
 
