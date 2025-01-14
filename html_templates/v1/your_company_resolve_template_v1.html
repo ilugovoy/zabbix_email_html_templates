@@ -19,7 +19,7 @@
                                             alt="logo YOUR_COMPANY"
                                             style="max-width:100%; height:100px; width:auto; border:none; margin-right: 10px;">
                                     </a>
-                                    
+
                                     <a href="https://www.zabbix.com" style="text-decoration:none" target="_blank">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png"
                                             alt="logo Zabbix"
@@ -39,10 +39,10 @@
                                                 <h1
                                                     style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#3d4852;font-size:19px;font-weight:bold;margin-top:0;text-align:left;background-color:white;">
                                                     <span
-                                                        style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#14dcb4">Problem
-                                                        Resolved </span></h1>
+                                                        style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#14a0dc">Problem
+                                                        updated </span></h1>
                                                 <p
-                                                    style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#3d4852;font-size:16px;line-height:1.5em;margin-top:0;text-align:left; color: #14dcc5">
+                                                    style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#3d4852;font-size:16px;line-height:1.5em;margin-top:0;text-align:left; color: #a9e0f7">
                                                     {TRIGGER.NAME}</p>
                                                 <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
                                                     style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;margin:0 0 21px">
@@ -73,65 +73,74 @@
                                                                                     <tbody
                                                                                         style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segue UI Symbol';box-sizing:border-box">
                                                                                         <tr>
+                                                                                        <tr>
                                                                                             <td
                                                                                                 style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                Severity:</td>
+                                                                                                User:</td>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                {TRIGGER.SEVERITY}</td>
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                {USER.FULLNAME}</td>
                                                                                         </tr>
+
                                                                                         <tr>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                Status</td>
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                Action</td>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                {TRIGGER.STATUS}</td>
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                {EVENT.UPDATE.ACTION}
+                                                                                            </td>
                                                                                         </tr>
+
                                                                                         <tr>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segue UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                Problem Started:</td>
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                Problem updated:</td>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segue UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                at {EVENT.TIME} on
-                                                                                                {EVENT.DATE}</td>
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                at {EVENT.UPDATE.DATE}
+                                                                                                {EVENT.UPDATE.TIME}.
+                                                                                            </td>
                                                                                         </tr>
+
                                                                                         <tr>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segue UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                Duration:</td>
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                Message:</td>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segue UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                {EVENT.DURATION}</td>
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                {EVENT.UPDATE.MESSAGE}
+                                                                                            </td>
                                                                                         </tr>
+
                                                                                         <tr>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                Item KEY:</td>
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                Status:</td>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segue UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                {ITEM.KEY1}</td>
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                {EVENT.STATUS}</td>
                                                                                         </tr>
+
                                                                                         <tr>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segue UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                Last value:</td>
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                Acknowledged:</td>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segue UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
-                                                                                                {ITEM.VALUE1}</td>
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                {EVENT.ACK.STATUS}</td>
                                                                                         </tr>
-                                                                                        
+
                                                                                         <tr>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segue UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
                                                                                                 Description:</td>
                                                                                             <td
-                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segue UI Emoji','Segue UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
+                                                                                                style="padding-left:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;color:#74787e;font-size:15px;line-height:18px;padding:10px 0;margin:0">
                                                                                                 {TRIGGER.DESCRIPTION}
                                                                                             </td>
                                                                                         </tr>
-                                                                                        
+
                                                                                         <tr>
                                                                                             <tr>
                                                                                                 <td
@@ -212,46 +221,45 @@
                                     </table>
                                 </td>
                             </tr>
-                            <tr>
-                                <td align="center">
-                                    <table align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation"
-                                        style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;margin:30px auto;padding:0;text-align:center;width:100%">
-                                        <tbody>
-                                            <tr>
-                                                <td align="center"
+                        <tr>
+                            <td align="center">
+                                <table align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;margin:30px auto;padding:0;text-align:center;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center"
+                                                style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box">
+                                                <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                                                    role="presentation"
                                                     style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box">
-                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0"
-                                                        role="presentation"
-                                                        style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td align="center"
-                                                                    style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box">
-                                                                    <table border="0" cellpadding="0" cellspacing="0"
-                                                                        role="presentation"
-                                                                        style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segue UI Symbol';box-sizing:border-box">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <p
-                                                                                    style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;line-height:1.5em;margin-top:0;color:#aeaeae;font-size:12px;text-align:center">
-                                                                                    2024 YOUR_COMPANY Zabbix </p>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center"
+                                                                style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                    role="presentation"
+                                                                    style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segue UI Symbol';box-sizing:border-box">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <p
+                                                                                style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;line-height:1.5em;margin-top:0;color:#aeaeae;font-size:12px;text-align:center">
+                                                                                2024 YOUR_COMPANY Zabbix </p>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
