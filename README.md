@@ -48,7 +48,7 @@ These HTML templates for Zabbix notifications are designed to enhance the user e
        - *your_company_resolve_template*: `Resolved in {EVENT.DURATION}: {EVENT.NAME}`   
        - *your_company_problem_update_template*: `Updated problem in {EVENT.AGE}: {EVENT.NAME}`  
 
-4. To display Uptime in the template, you need to create a dependent item from `system.uptime` and configure preprocessing.
+4. To display Uptime in the templates v1, you need to create a dependent item from `system.uptime` and configure preprocessing.
    ![Update Template](img/dependend_item.png)
    
    ![Update Template](img/preprocessing.png)  
