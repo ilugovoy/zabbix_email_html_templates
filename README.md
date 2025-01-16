@@ -47,4 +47,28 @@ These HTML templates for Zabbix notifications are designed to enhance the user e
        - *your_company_problem_template*: `Problem: {HOST.NAME}: {EVENT.NAME}`  
        - *your_company_resolve_template*: `Resolved in {EVENT.DURATION}: {EVENT.NAME}`   
        - *your_company_problem_update_template*: `Updated problem in {EVENT.AGE}: {EVENT.NAME}`  
-     
+
+4. To display Uptime in the template, you need to create a dependent item from `system.uptime` and configure preprocessing.
+   ![Update Template](img/dependend_item.png)
+   
+   ![Update Template](img/preprocessing.png)  
+
+   ```bash
+    var days = parseInt(value / 86400);
+    value = value % 86400;
+    var hours = parseInt(value / 3600);
+    if (hours < 10){
+    hours = "0" + hours;
+    }
+    value = value % 3600;
+    var minutes = parseInt(value / 60);
+    if (minutes < 10){
+    minutes = "0" + minutes;
+    }
+    var seconds = value % 60;
+    if (seconds < 10){
+    seconds = "0" + seconds;
+    }
+    value = days +" days, " + hours + ":" + minutes + ":" + seconds;
+    return value;
+   ```
